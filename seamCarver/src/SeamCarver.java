@@ -129,7 +129,7 @@ public class SeamCarver {
         for (int i = 0; i < seamH; i++) {
             removeHorizontalSeam();
         }
-        for (int i = 0; i < seamH; i++) {
+        for (int i = 0; i < seamV; i++) {
             removeVerticalSeam();
         }
         return image;

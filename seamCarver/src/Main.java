@@ -16,8 +16,8 @@ public class Main {
 //        }
         SeamCarver carver=new SeamCarver(filename);
 
-        int seamH=50;
-        int seamV=0;
+        int seamH=0;
+        int seamV=30;
 
         BufferedImage image = carver.seamCarver(seamH,seamV);
 
