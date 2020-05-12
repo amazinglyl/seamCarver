@@ -16,10 +16,10 @@ public class Energy {
                 int y1 = (y - 1 + width) % width;
                 int y2 = (y + 1) % width;
 
-                Color left = new Color(image.getRGB(x1, y));
-                Color right = new Color(image.getRGB(x2, y));
-                Color top = new Color(image.getRGB(x, y1));
-                Color bottom = new Color(image.getRGB(x, y2));
+                Color left = new Color(image.getRGB(y, x1));
+                Color right = new Color(image.getRGB(y, x2));
+                Color top = new Color(image.getRGB(y1, x));
+                Color bottom = new Color(image.getRGB(y2, x));
 
                 int gx = right.getGreen() - left.getGreen();
                 int rx = right.getRed() - left.getRed();
